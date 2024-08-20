@@ -62,3 +62,33 @@ console.log(bar);//10
 const gg = ['23', 34];
 const [ num1, num2 ] = gg;
 console.log(num2);//34
+
+// Parametros sin retorno
+
+function mensaje(Hola){
+    console.log(Hola);
+}
+mensaje("Hello");
+
+// Parametro con retorno
+
+function suma(a, b){
+    return a + b;
+}
+const resultado = suma(5, 3);
+console.log(resultado);
+
+// sin parametros con retorno
+
+function numero(){
+    return Math.random();
+}
+const numeros = numero();
+console.log(numeros);
+
+// sin parametro sin retorno 
+
+function mensajes(){
+    console.log("Hello");
+}
+mensajes();
