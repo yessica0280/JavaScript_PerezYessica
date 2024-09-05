@@ -1,0 +1,74 @@
+@import "https://fonts.googleapis.com/css?family=Ubuntu:300,400,500";
+@import "https://fonts.googleapis.com/css?family=Raleway:400";
+#contenedor{
+    background-color: #282828;
+    height: 49vh;
+    width: 99vw;
+}
+#contenedor1{
+    background-color: #e9e9e9;
+    height: 49vh;
+    width: 99vw;
+}
+#contenedor2{
+    background-color: #fefefe;
+    height: 72vh;
+    width: 55vw;
+    z-index: 0;
+    top: 7vw;
+    left: 21vw;
+    position: absolute;
+    border-radius: 1%;
+}
+#contenedor3{
+    width: 55vw;
+    height: 10vw;
+    background: #f7f7f7;
+    border-radius: 1%;
+    border-bottom: 1px solid rgb(204, 203, 199);
+}
+#circulo{
+    background-color: #fefefe;
+    position: relative;
+    width: 12vw;
+    height:12vw;
+    left: 22vw;
+    top: -8vw;
+    border-radius: 25vw;
+    border: 0.2vw solid  rgb(240, 239, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#img{
+    border-radius: 50%;
+    width: 10vw;
+    height:10vw;
+    border: 5vw;
+}
+#letra{
+    font-family: 'Raleway';
+    font-size: 1.2vw;
+    position: relative;
+    top: -7vw;
+    color: gray;
+    left: 25vw;
+}
+#imagen4{
+    width: 5vw;
+    height: 6vw;
+    top: -3vw;
+    transition: 1s;
+    position: relative;
+    left: 2vw;
+}
+#ima{
+    width: 5vw;
+    height: 3vw;
+    overflow: hidden;
+}
+#imagen4:hover{
+    top: 0;
+    width: 5vw;
+    height: 6vw;
+}
