@@ -1,0 +1,84 @@
+@import "https://fonts.googleapis.com/css?family=Raleway:400";
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #308834;
+    height: 30vw;
+}
+#fondo{
+    width: 60vw;
+    height: 30vw;
+    background-color: #225f24;
+    margin-top: 9vw;
+    margin-left: 18vw;
+    border-radius: 9vw;
+    border: rgb(8, 8, 8) 1vw solid;
+}
+#fondo1{
+    width: 8vw;
+    height: 4vw;
+    background-color: white;
+    border-radius: 1vw;
+    margin-top: 12vw;
+}
+#fondo2{
+    width: 4vw;
+    height: 8vw;
+    background-color: white;
+    border-radius: 1vw;
+    margin-top: 4vw;
+    margin-left: 26vw;
+}
+#fondo3{
+    width: 4vw;
+    height: 8vw;
+    background-color: white;
+    border-radius: 1vw;
+    margin-top: -28vw;
+    margin-left: 26vw;
+}
+#fondo4{
+    width: 8vw;
+    height: 4vw;
+    background-color: white;
+    border-radius: 1vw;
+    margin-top: 4vw;
+    margin-left: 50vw;
+}
+
+nav input{
+    display: none;
+    font-size: 2vw;
+}
+nav ul{
+    display: none;
+    font-size: 2vw;
+}
+nav input:checked~ul{
+    display: flex;
+    font-size: 2vw;
+    color: white;
+    margin-left: 2vw;
+    background-color: rgb(0, 0, 0);
+    width: 15vw;
+    font-family: 'Raleway';
+    font-size: 0.8vw;
+    border-radius: 1vw;
+    justify-content: center;
+    text-align: center;
+    margin-top: 0.8vw;
+}
+#imagen{
+    margin-left: 2vw;
+    margin-top: -38vw;
+    display: flex;
+}
+#carta{
+    width: 4vw;
+    height: 6vw;
+    margin-left: 45vw;
+    margin-top: 19vw;
+}
