@@ -1,30 +1,52 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Juego</title>
-    <link rel="icon" href="img/img.png" type="image/png">
+    <title>La mano ganadora</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
-<body>
-    <div id="fondo">
-        <div id="fondo1"></div>
-        <div id="fondo2"></div>
-        <div id="fondo3"></div>
-        <div id="fondo4"></div>
+<body style="background-image: url(img/pok.jpg);">
+    <div id="menu">
+        <h1>La mano ganadora</h1>
+        <button id="iniciar-juego-btn">Iniciar Juego</button>
+        <button id="ver-reglas-btn">Reglas</button>
+        <button id="como-jugar-btn">Funcionalidad</button>
     </div>
-    <nav>
-        <input type="checkbox" id="menu">
-        <label for="menu"><img src="img/align-justify-regular-24.png" id="imagen"></label>
+    <div id="juego" style="display: none;">
+        <div id="jugador1-mano">
+            <h2>Jugador 1</h2>
+            <div id="jugador1-cartas"></div>
+        </div>
+        <div id="jugador2-mano">
+            <h2>Jugador 2</h2>
+            <div id="jugador2-cartas"></div>
+        </div>
+        <p id="turno-info">Turno de: Jugador 1</p>
+        <div id="cartas-disponibles"></div>
+        <button id="repartir-cartas-btn" style="display: none;">Cartas Disponibles</button>
+        <p id="resultado"></p>
+        <button id="reiniciar-juego-btn" style="display: none;">Volver a Jugar</button>
+    </div>
+    <div id="reglas" style="display: none;">
+        <h2>Reglas del Juego</h2>
+        <p>Este es un juego de póker donde dos jugadores seleccionan cartas una por una de una baraja. El objetivo es tener la mano con el mayor valor en base a las siguientes reglas:</p>
         <ul>
-            <li>FUNCIONALIDAD <br>
-                <br>
-            Habra una baraja de cartas de las cuales los jugadores recibiran tres cartas en cada ronda, dichos jugadores tendran la opción de "pedir"(recibir cartas adicionales) o "plantarse"(conservar la mano actual).<br>El A tiene un valor de 1 y 11. <br> J, Q, K tienen un valor de 10.<br>Las demás cartas tiene su valor mostrado.
-        <br><br>REGLAS <br><br>1. Los jugadores deben de sumar 21 en sus cartas ya que si se pasa de 21 perdera.<br>2. Minimo dos jugadores maximo 4 jugadores.</li>
+            <li>Las cartas numéricas (2-10) tienen el valor correspondiente a su número.</li>
+            <li>Las cartas de figura (J, Q, K) valen 10 puntos.</li>
+            <li>El As (A) vale 11 puntos.</li>
+            <li>Cada jugador selecciona 2 cartas. El jugador con la mayor puntuación gana.</li>
         </ul>
-    </nav>
-    <div id="resultado"></div>
+        <button id="volver-menu-desde-reglas-btn">Volver al Menú</button>
+    </div>
+    <div id="como-jugar" style="display: none;">
+        <h2>Cómo Funciona el Juego</h2>
+        <p>1. Comienza el juego haciendo clic en el botón "Iniciar Juego".</p>
+        <p>2. Cada jugador selecciona una carta de las cartas disponibles, una por turno.</p>
+        <p>3. El turno alterna entre Jugador 1 y Jugador 2 hasta que ambos seleccionen 2 cartas.</p>
+        <p>4. Al final, se calcula el valor de ambas manos y se determina el ganador.</p>
+        <button id="volver-menu-desde-como-jugar-btn">Volver al Menú</button>
+    </div>
 </body>
 <script src="js/script.js"></script>
 </html>
