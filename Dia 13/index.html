@@ -5,47 +5,50 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>La mano ganadora</title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="icon" href="img/img.png" type="image/x-icon">
 </head>
 <body style="background-image: url(img/pok.jpg);">
-    <div id="menu">
-        <h1>La mano ganadora</h1>
-        <button id="iniciar-juego-btn">Iniciar Juego</button>
-        <button id="ver-reglas-btn">Reglas</button>
-        <button id="como-jugar-btn">Funcionalidad</button>
-    </div>
-    <div id="juego" style="display: none;">
-        <div id="jugador1-mano">
-            <h2>Jugador 1</h2>
-            <div id="jugador1-cartas"></div>
+    <div id="reglas1">
+        <div id="menu">
+            <h1>La mano ganadora</h1>
+            <button id="iniciar-juego-btn">Iniciar Juego</button>
+            <button id="ver-reglas-btn">Reglas</button>
+            <button id="como-jugar-btn">Funcionalidad</button>
         </div>
-        <div id="jugador2-mano">
-            <h2>Jugador 2</h2>
-            <div id="jugador2-cartas"></div>
+        <div id="juego" style="display: none;">
+            <div id="jugador1-mano">
+                <h2>Jugador 1</h2>
+                <div id="jugador1-cartas"></div>
+            </div>
+            <div id="jugador2-mano">
+                <h2>Jugador 2</h2>
+                <div id="jugador2-cartas"></div>
+            </div>
+            <p id="turno-info">Turno de: Jugador 1</p>
+            <div id="cartas-disponibles"></div>
+            <button id="repartir-cartas-btn" style="display: none;">Cartas Disponibles</button>
+            <p id="resultado"></p>
+            <button id="reiniciar-juego-btn" style="display: none;">Volver a Jugar</button>
         </div>
-        <p id="turno-info">Turno de: Jugador 1</p>
-        <div id="cartas-disponibles"></div>
-        <button id="repartir-cartas-btn" style="display: none;">Cartas Disponibles</button>
-        <p id="resultado"></p>
-        <button id="reiniciar-juego-btn" style="display: none;">Volver a Jugar</button>
-    </div>
-    <div id="reglas" style="display: none;">
-        <h2>Reglas del Juego</h2>
-        <p>Este es un juego de póker donde dos jugadores seleccionan cartas una por una de una baraja. El objetivo es tener la mano con el mayor valor en base a las siguientes reglas:</p>
-        <ul>
-            <li>Las cartas numéricas (2-10) tienen el valor correspondiente a su número.</li>
-            <li>Las cartas de figura (J, Q, K) valen 10 puntos.</li>
-            <li>El As (A) vale 11 puntos.</li>
-            <li>Cada jugador selecciona 2 cartas. El jugador con la mayor puntuación gana.</li>
-        </ul>
-        <button id="volver-menu-desde-reglas-btn">Volver al Menú</button>
-    </div>
-    <div id="como-jugar" style="display: none;">
-        <h2>Cómo Funciona el Juego</h2>
-        <p>1. Comienza el juego haciendo clic en el botón "Iniciar Juego".</p>
-        <p>2. Cada jugador selecciona una carta de las cartas disponibles, una por turno.</p>
-        <p>3. El turno alterna entre Jugador 1 y Jugador 2 hasta que ambos seleccionen 2 cartas.</p>
-        <p>4. Al final, se calcula el valor de ambas manos y se determina el ganador.</p>
-        <button id="volver-menu-desde-como-jugar-btn">Volver al Menú</button>
+        <div id="reglas" style="display: none;">
+            <h2>Reglas del Juego</h2>
+            <p>Este es un juego de póker donde dos jugadores seleccionan cartas una por una de una baraja. El objetivo es tener la mano con el mayor valor en base a las siguientes reglas:</p>
+            <ul>
+                <li>Las cartas numéricas (2-10) tienen el valor correspondiente a su número.</li>
+                <li>Las cartas de figura (J, Q, K) valen 10 puntos.</li>
+                <li>El As (A) vale 11 puntos.</li>
+                <li>Cada jugador selecciona 2 cartas. El jugador con la mayor puntuación gana.</li>
+            </ul>
+            <button id="volver-menu-desde-reglas-btn">Volver al Menú</button>
+        </div>
+        <div id="como-jugar" style="display: none;">
+            <h2>Cómo Funciona el Juego</h2>
+            <p>1. Comienza el juego haciendo clic en el botón "Iniciar Juego".</p>
+            <p>2. Cada jugador selecciona una carta de las cartas disponibles, una por turno.</p>
+            <p>3. El turno alterna entre Jugador 1 y Jugador 2 hasta que ambos seleccionen 2 cartas.</p>
+            <p>4. Al final, se calcula el valor de ambas manos y se determina el ganador.</p>
+            <button id="volver-menu-desde-como-jugar-btn">Volver al Menú</button>
+        </div>
     </div>
 </body>
 <script src="js/script.js"></script>
