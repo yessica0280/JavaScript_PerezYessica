@@ -1,15 +1,20 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Victimas de desplazamiento</title>
+    <title>Datos Colombia</title>
     <link rel="stylesheet" href="style/style.css">
 </head>
 <body>
-    <div id="contenedor">
-
-    </div>
+    <h1>VICTIMAS DE DESPLAZAMIENTO</h1>
+    <h2>Solo los años del 2021 hasta el 2024</h2>
+    <form id="search-form">
+        <input type="number" id="search-input" placeholder="Ingrese el año" required>
+        <button type="submit">Buscar</button>
+    </form>
+    <p id="result-count"></p>
+    <div id="data-container"></div>
 </body>
 <script src="js/script.js"></script>
 </html>
