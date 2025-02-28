@@ -12,7 +12,8 @@ En este repositorio podrás enontrar 5 archivos los cuales te voy a explicar má
 | 5 | Módulo 5 |
 
 ## Herramienta utilizada
-![image](https://github.com/user-attachments/assets/117cdb48-07e1-4b32-9d34-5e5f93fd5532)
+
+![image](https://github.com/user-attachments/assets/f17ff78a-a9ca-44c6-abea-c173f2e8105b)
 
 ## Módulo 1
 
